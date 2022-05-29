@@ -1,6 +1,7 @@
 public class TareaControl {
 
-    private String nombreTarea;
-    private String descripcion;
+    protected String nombreTarea;
+    protected String descripcion;
+
 ///FUNCION CUSTOM DE COMPLETADO RETORNA STRING.
 }
