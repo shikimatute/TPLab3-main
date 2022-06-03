@@ -4,6 +4,11 @@ public class Registro {
     private String sintomasCompletados;
     boolean completoRegistro;
 
+    public Registro() {
+        this.sintomasCompletados = "VACIO";
+        this.completoRegistro = false;
+    }
+
     public Registro(String sintomasCompletados, boolean completoRegistro) {
         this.sintomasCompletados = sintomasCompletados;
         this.completoRegistro = completoRegistro;
@@ -24,4 +29,5 @@ public class Registro {
     public void setCompletoRegistro(boolean completoRegistro) {
         this.completoRegistro = completoRegistro;
     }
+
 }

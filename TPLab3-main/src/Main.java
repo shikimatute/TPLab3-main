@@ -9,7 +9,6 @@ public class Main {
 
 
 
-
         /* TODO Borrador -> Asignar un Control a cada dia del Tratamiento
         *
         * for (int i = 0; i < diasTratamiento; i++){

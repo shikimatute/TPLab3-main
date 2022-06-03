@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class Profesional extends Usuario implements CrearPlanControl {
     private String licencia;
@@ -19,7 +17,7 @@ public class Profesional extends Usuario implements CrearPlanControl {
     public void checkearInfoDiaAnterior(){
         short contadorNoCompletados = 0;
         for (Paciente x:listaPacientesActivos) {
-            Registro checkeoRegistro = x.getRegistroTratamiento().get(x.contadorDias - 1);
+            Registro checkeoRegistro = x.registroTratamiento.get(x.registroTratamiento.size()-1);
            if (!checkeoRegistro.completoRegistro){
                System.out.println("No completo el registro el paciente: " + x.getEmail());
                contadorNoCompletados++;
@@ -27,4 +25,7 @@ public class Profesional extends Usuario implements CrearPlanControl {
         }
         System.out.println("Un total de " + contadorNoCompletados + " NO completaron su registro diario");
     }
+
+
+
 }
